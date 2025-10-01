@@ -1,6 +1,6 @@
 # kata-pub-2
 
-**Kata 65 per l'especialitat fullstackPHP 2-10-25**
+**Kata 65 per l'especialitat fullstackPHP 1-10-25**
 
 Continuem amb la kata anterior! 
 
