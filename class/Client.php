@@ -20,12 +20,7 @@ class Client {
 
     public function getIn(Pub $pub) {
         $reservationName = $this->getReservationName();
-        if($pub->getIn($reservationName)) {
-            
-        }
-        else {
-
-        }
+        $pub->getIn($reservationName);
     }
 
     private function getReservationName(): string {
