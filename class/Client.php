@@ -18,6 +18,16 @@ class Client {
         if(!$pub->checkReservation($reserveName, $peopleNumber)) echo self::BUSY_PUB_MSG;
     }
 
+    public function getIn(Pub $pub) {
+        $reservationName = $this->getReservationName();
+        if($pub->getIn($reservationName)) {
+            
+        }
+        else {
+
+        }
+    }
+
     private function getReservationName(): string {
         $name = readline(self::RESERVATION_NAME_MSG);
         if(is_null($name) || $name == "") return $this->name;

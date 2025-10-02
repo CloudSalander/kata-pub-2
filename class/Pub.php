@@ -18,11 +18,14 @@ class Pub {
             return true;
         }
         return false;
-    } 
+    }
+    
+    public function getIn(string $reservationName) {
+        
+    }
 
     private function checkTables(int $qty): int {
         foreach($this->tables as $table) {
-            //Why I check first if its busy?
             if(!$table->getIsBusy() && $table->getCapacity() >= $qty) {
                 $table->switchIsBusy();
                 return $table->getId();

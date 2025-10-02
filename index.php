@@ -17,5 +17,5 @@ $pub = new Pub($tables);
 $client->reserve($pub);
 $client->reserve($pub);
 
-
+$client->getIn($pub);
 
